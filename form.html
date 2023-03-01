@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        input {
+            display: block;
+            height: 30px;
+            width: 400px;
+        }
+        .validation{
+            margin-top: 45px;
+            margin-left: 5px;
+            padding-top: none;
+            
+        }
+     	
+        #header {
+            margin-left: 400px;
+        }
+        .btx{
+            padding: 9px;
+border-radius: 20px;
+margin-left: 10px;
+margin-top: 10px;
+cursor: pointer;
+border: none;
+        }
+        form{
+            width: 57%;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="header">Form Validation</h1>
+    <form  style="margin: auto; background-color: aliceblue; border-radius: 20px;">
+        <div  class="validation" >
+       Name: <input id="getName" type="text" name="uname" required />
+       </div>
+
+       <div  class="validation" >
+        Age: <input id="getAge"  type="number" name="uage" required />
+        <div  class="validation" >
+            Email: <input   id="getEmail" type="email" name="uemail" required />
+            </div>
+
+            <div class="validation" >
+                Address: <input   id="getAddress"  type="text" name="uAddress" required />
+                </div>
+
+                <!-- <button class="btn" type="submit" value="Submit"> -->
+                <!-- <button  class="cls" type="reset" value="Reset"> -->
+<button  style="background-color: yellow;" class="btx" id="addbtn">show my data</button>
+<button style="background-color:red;" class="btx" id="clearbtn">clear form</button>
+                
+    </form>
+
+<script src="form.js"></script>
+
+</body>
+</html>
